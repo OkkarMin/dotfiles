@@ -85,6 +85,7 @@ alias k="kubectl"
 alias ls="exa --icons --group-directories-first"
 alias ll="exa -l --icons --group-directories-first"
 alias la="exa -al --icons --group-directories-first"
+alias tree="exa -L --icons"
 
 ##Git Aliases##
 alias lg="lazygit"
