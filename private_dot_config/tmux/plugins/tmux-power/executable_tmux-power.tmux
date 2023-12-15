@@ -58,8 +58,7 @@ case $TC in
 	TC='#ff7f50'
 	;;
 'sky')
-	# TC='#87ceeb'
-	TC='#66c1e5'
+	TC='#29a8da'
 	;;
 'everforest')
 	TC='#a7c080'
