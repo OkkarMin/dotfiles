@@ -75,9 +75,10 @@ end
 set -x GPG_TTY (tty)
 
 #### Aliases ####
+alias v="nvim"
+alias vim="nvim"
 alias tf="terraform"
 alias asl="aws sso login"
-alias vim="nvim"
 alias c="aichat --session --role con"
 alias k="kubectl"
 
