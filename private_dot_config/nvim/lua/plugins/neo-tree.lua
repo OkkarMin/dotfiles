@@ -12,6 +12,11 @@ return {
           ["h"] = "open",
         },
       },
+      filesystem = {
+        follow_current_file = {
+          enabled = true,
+        },
+      },
     },
   },
 }
