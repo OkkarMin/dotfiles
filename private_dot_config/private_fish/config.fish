@@ -62,7 +62,7 @@ function __check_nvm --on-variable PWD --description 'Do nvm stuff'
 end
 __check_nvm
 
-function zz
+function cdd
     cd $(z -l | awk '{print $2}' | fzf)
 end
 
