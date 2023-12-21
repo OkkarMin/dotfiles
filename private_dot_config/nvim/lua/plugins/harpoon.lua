@@ -19,12 +19,12 @@ return {
         function()
           require("harpoon").ui:toggle_quick_menu(require("harpoon"):list())
         end,
-        desc = "Display harpoon list",
+        desc = "Display harpoon menu",
       },
       {
         "<leader>hl",
         "<cmd>Telescope harpoon marks<cr>",
-        desc = "Display harpoon list",
+        desc = "Display harpoon list with telescope",
       },
     },
   },
