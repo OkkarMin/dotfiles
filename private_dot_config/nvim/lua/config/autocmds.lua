@@ -10,11 +10,10 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
 
     local is_helm_file_type = vim.bo.filetype == "helm"
     if is_helm_file_type then
-      -- disable diagnostic
-      vim.diagnostic.disable()
+      vim.diagnostic.disable(0)
 
-      -- stop yamlls client
-      vim.lsp.stop_client(1, true)
+      local yamlls_id = vim.lsp.get_active_clients({ name = "yamlls" })
+      vim.lsp.stop_client(yamlls_id, true)
     end
   end,
 })
