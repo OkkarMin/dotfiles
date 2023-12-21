@@ -1,9 +1,6 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-vim.keymap.set("i", "jj", "<ESC>", { silent = true })
-
--- Move to window using the <ctrl> hjkl keys
 local Util = require("lazyvim.util")
 local function map(mode, lhs, rhs, opts)
   local keys = require("lazy.core.handler").handlers.keys
@@ -16,6 +13,16 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
+-- use jj to exit insert mode
+map("i", "jj", "<ESC>", { silent = true })
+
+-- create window using - and \
+map("n", "<leader>w-", "<C-W>s", { desc = "Split window below", remap = true })
+map("n", "<leader>w\\", "<C-W>v", { desc = "Split window right", remap = true })
+map("n", "<leader>-", "<C-W>s", { desc = "Split window below", remap = true })
+map("n", "<leader>\\", "<C-W>v", { desc = "Split window right", remap = true })
+
+-- move to window using the <ctrl> hjkl keys
 map("n", "<C-h>", "<cmd>lua require'tmux'.move_left()<cr>", { desc = "Go to left window" })
 map("n", "<C-j>", "<cmd>lua require'tmux'.move_bottom()<cr>", { desc = "Go to lower window" })
 map("n", "<C-k>", "<cmd>lua require'tmux'.move_top()<cr>", { desc = "Go to upper window" })
