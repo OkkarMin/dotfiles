@@ -13,6 +13,10 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
+-- save file in buffer using <leader>bs and <leader>bS for saving all buffers
+map("n", "<leader>bs", "<cmd>w<cr>", { desc = "Save current buffer" })
+map("n", "<leader>bS", "<cmd>w<cr>", { desc = "Save all buffer" })
+
 -- use jj to exit insert mode
 map("i", "jj", "<ESC>", { silent = true })
 
