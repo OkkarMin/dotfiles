@@ -81,6 +81,7 @@ alias tf="terraform"
 alias asl="aws sso login"
 alias c="aichat --session --role con"
 alias k="kubectl"
+alias ca="chezmoi apply"
 
 ##Exa Aliases##
 alias ls="exa --icons --group-directories-first"
