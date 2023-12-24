@@ -74,6 +74,9 @@ end
 #### Setting GPG_TTY for GPG code sign ####
 set -x GPG_TTY (tty)
 
+#### Exports ####
+export K9S_EDITOR=nvim
+
 #### Aliases ####
 alias v="nvim"
 alias vim="nvim"
