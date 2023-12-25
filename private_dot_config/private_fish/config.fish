@@ -76,6 +76,8 @@ set -x GPG_TTY (tty)
 
 #### Exports ####
 export K9S_EDITOR=nvim
+export EDITOR=nvim
+export XDG_CONFIG_HOME="$HOME/.config"
 
 #### Aliases ####
 alias v="nvim"
