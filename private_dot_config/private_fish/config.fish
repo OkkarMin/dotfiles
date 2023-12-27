@@ -63,7 +63,7 @@ end
 __check_nvm
 
 function cdd
-    cd $(z -l | awk '{print $2}' | fzf)
+    cd $(z -l | awk '{print $2}' | _fzf_wrapper)
 end
 
 function e -a profile
