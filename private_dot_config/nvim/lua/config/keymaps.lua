@@ -13,6 +13,8 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
+map("x", "p", "P", { desc = "Paste without yanking the deleted text" })
+
 -- save file in buffer using <leader>bs and <leader>bS for saving all buffers
 map("n", "<leader>bs", "<cmd>w<cr>", { desc = "Save current buffer" })
 map("n", "<leader>bS", "<cmd>w<cr>", { desc = "Save all buffer" })
