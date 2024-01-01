@@ -3,8 +3,8 @@
 -- Add any additional options here
 local opt = vim.opt
 
--- turn off relative line
-opt.relativenumber = false
+-- toggle relative line
+opt.relativenumber = true
 
 -- tabs & indentation
 opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
