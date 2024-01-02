@@ -106,7 +106,7 @@ tmux_set @prefix_highlight_output_suffix "#[fg=$TC]#[bg=$BG]$rarrow"
 tmux_set status-left-bg "$G04"
 tmux_set status-left-fg "$G12"
 tmux_set status-left-length 150
-user="otosan"
+user="okkar"
 # LS="#[fg=$G04,bg=$TC,bold] $user_icon $user@#h #[fg=$TC,bg=$G06,nobold]$rarrow#[fg=$TC,bg=$G06] $session_icon #S "
 LS="#[fg=$G04,bg=$TC] $user_icon $user #[fg=$TC,bg=$G06,nobold]$rarrow#[fg=$TC,bg=$G06] "
 if "$show_upload_speed"; then
