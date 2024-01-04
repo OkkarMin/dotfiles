@@ -15,9 +15,17 @@ end
 
 map("x", "p", "P", { desc = "Paste without yanking the deleted text" })
 
+-- move up and down text in visual mode
+map("v", "J", ":m '>+1<CR>gv=gv")
+map("v", "K", ":m '<-2<CR>gv=gv")
+
+-- ctrl u/d is not disorienting
+map("n", "<C-u>", "<C-u>zz")
+map("n", "<C-d>", "<C-d>zz")
+
 -- save file in buffer using <leader>bs and <leader>bS for saving all buffers
 map("n", "<leader>bs", "<cmd>w<cr>", { desc = "Save current buffer" })
-map("n", "<leader>bS", "<cmd>w<cr>", { desc = "Save all buffer" })
+map("n", "<leader>bS", "<cmd>wa<cr>", { desc = "Save all buffer" })
 
 -- use jj to exit insert mode
 map("i", "jj", "<ESC>", { silent = true })
