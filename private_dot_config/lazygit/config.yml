@@ -4,4 +4,4 @@ gui:
       - "#08457e"
     selectedRangeBgColor:
       - "#08457e"
-  nerdFontsVersion: 3
+  nerdFontsVersion: "3"
