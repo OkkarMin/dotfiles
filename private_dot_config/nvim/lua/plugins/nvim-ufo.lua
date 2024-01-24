@@ -99,14 +99,15 @@ return {
       end,
       desc = "Close all folds",
     },
-    {
-      "K",
-      function()
-        local winid = require("ufo").peekFoldedLinesUnderCursor()
-        if not winid then
-          vim.lsp.buf.hover()
-        end
-      end,
-    },
+    -- conflicts with lsp hover and move lines up
+    -- {
+    --   "K",
+    --   function()
+    --     local winid = require("ufo").peekFoldedLinesUnderCursor()
+    --     if not winid then
+    --       vim.lsp.buf.hover()
+    --     end
+    --   end,
+    -- },
   },
 }
