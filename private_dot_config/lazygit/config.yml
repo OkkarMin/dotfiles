@@ -1,7 +1,6 @@
 gui:
+  showFileTree: false
   theme:
     selectedLineBgColor:
-      - "#08457e"
-    selectedRangeBgColor:
       - "#08457e"
   nerdFontsVersion: "3"
