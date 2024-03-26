@@ -30,6 +30,7 @@ end
 __check_nvm
 
 function cdd
+    export _ZO_FZF_OPTS="-i --multi --reverse --inline-info --height=8"
     zi
 end
 
