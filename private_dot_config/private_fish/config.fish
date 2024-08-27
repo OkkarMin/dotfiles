@@ -17,6 +17,7 @@ zoxide init fish | source
 
 #### Path to Node ####
 fish_add_path /Users/okar/.local/share/nvm/v18.16.0/bin
+fish_add_path /Users/okar/development/flutter/bin
 
 
 #### Functions ####
